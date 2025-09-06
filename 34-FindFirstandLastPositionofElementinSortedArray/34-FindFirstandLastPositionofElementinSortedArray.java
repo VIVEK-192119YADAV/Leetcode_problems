@@ -1,4 +1,4 @@
-// Last updated: 8/19/2025, 1:39:06 PM
+// Last updated: 9/6/2025, 7:24:05 AM
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int first = findBound(nums, target, true);
