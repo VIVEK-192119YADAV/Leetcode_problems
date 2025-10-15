@@ -1,4 +1,4 @@
-// Last updated: 10/15/2025, 9:21:50 PM
+// Last updated: 10/15/2025, 9:22:39 PM
 class Solution {
     public int maxIncreasingSubarrays(List<Integer> nums) {
         int n = nums.size();
