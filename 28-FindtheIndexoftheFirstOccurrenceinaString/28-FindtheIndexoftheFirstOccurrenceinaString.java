@@ -1,4 +1,4 @@
-// Last updated: 11/8/2025, 10:48:16 AM
+// Last updated: 11/8/2025, 10:48:25 AM
 class Solution {
     public int strStr(String haystack, String needle) {
         for(int i=0;i<haystack.length()-needle.length()+1;i++){
