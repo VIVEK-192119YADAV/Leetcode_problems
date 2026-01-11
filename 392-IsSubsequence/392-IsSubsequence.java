@@ -1,4 +1,4 @@
-// Last updated: 1/11/2026, 2:26:42 PM
+// Last updated: 1/11/2026, 2:27:45 PM
 1class Solution {
 2    public boolean isSubsequence(String s, String t) {
 3        if(s.length()==0){
