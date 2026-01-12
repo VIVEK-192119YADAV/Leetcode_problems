@@ -1,4 +1,4 @@
-// Last updated: 1/12/2026, 11:47:25 PM
+// Last updated: 1/13/2026, 12:02:49 AM
 1class Solution {
 2    public int square(int n){
 3         int sum=0;
