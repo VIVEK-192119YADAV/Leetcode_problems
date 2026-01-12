@@ -1,4 +1,4 @@
-// Last updated: 1/12/2026, 10:47:12 PM
+// Last updated: 1/12/2026, 10:47:51 PM
 1class Solution {
 2    public boolean containsDuplicate(int[] nums) {
 3        HashSet<Integer>set=new HashSet<>();
