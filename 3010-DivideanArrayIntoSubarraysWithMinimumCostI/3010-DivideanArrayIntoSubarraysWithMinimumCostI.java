@@ -1,4 +1,4 @@
-// Last updated: 2/1/2026, 8:54:07 PM
+// Last updated: 2/1/2026, 8:55:18 PM
 1class Solution {
 2    public int minimumCost(int[] nums) {
 3        int score=nums[0];
