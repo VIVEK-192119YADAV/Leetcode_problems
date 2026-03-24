@@ -1,38 +1,33 @@
-// Last updated: 9/5/2025, 9:50:45 AM
-class Solution {
-    public int search(int[] nums, int target) {
-        int l=0;
-        int r=nums.length-1;
-        while(l<=r){
-            int mid=l+(r-l)/2;
-            if(nums[mid]==target){
-                return mid;
-            }
-            if(nums[l]<=nums[mid]){
-                if(target>=nums[l] && target<nums[mid]){
-                    r=mid -1;
-                }
-                else{
-                    l=mid+1;
-                }
-                
-
-            }
-        
-        else{
-             if(target>nums[mid] && target <=nums[r]){
-            l=mid+1;
-
-        }
-        else{
-            r=mid-1;
-        }
-        }
-       
-        
-    }
-    return -1;
-      
-}
-
-}
+// Last updated: 3/24/2026, 2:42:20 PM
+1class Solution {
+2    public int search(int[] nums, int target) {
+3        int l = 0;
+4        int h = nums.length - 1;
+5
+6        while (l <= h) {
+7            int mid = (l + h) / 2;
+8
+9            if (nums[mid] == target) {
+10                return mid;
+11            }
+12
+13            // Left half sorted
+14            if (nums[l] <= nums[mid]) {
+15                if (nums[l] <= target && target < nums[mid]) {
+16                    h = mid - 1;
+17                } else {
+18                    l = mid + 1;
+19                }
+20            }
+21            // Right half sorted
+22            else {
+23                if (nums[mid] < target && target <= nums[h]) {
+24                    l = mid + 1;
+25                } else {
+26                    h = mid - 1;
+27                }
+28            }
+29        }
+30        return -1;
+31    }
+32}
