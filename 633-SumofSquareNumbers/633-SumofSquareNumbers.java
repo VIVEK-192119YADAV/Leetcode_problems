@@ -1,22 +1,23 @@
-// Last updated: 6/16/2026, 2:02:55 PM
+// Last updated: 6/16/2026, 2:32:49 PM
 1class Solution {
-2    public boolean judgeSquareSum(int c) {
-3        int i=0;
-4         int j = (int)Math.sqrt(c);
-5        while(i<=j){
-6            long sq=(long)i*i+(long)j*j;
-7            if(sq==c) return true;
-8            if(sq<c){
-9                i++;
-10            }
-11            if(sq>c){
-12                j--;
-13
-14            }
-15           
-16
-17        
+2    public boolean isPerfectSquare(int num) {
+3        int l=0;
+4        int r=num;
+5     
+6        while(l<=r){
+7            int mid =l+(r-l)/2;
+8            long  sq=(long)mid*(long)mid;
+9        if(sq==num){
+10            return true;}
+11       else if(sq<num){
+12            l=mid +1;
+13        }
+14        else{
+15            r= mid-1;
+16        }
+17
 18        }
 19        return false;
-20    }
-21}
+20        
+21    }
+22}
